@@ -7,8 +7,6 @@ import Car from "./component/Car"; // Usamos el componente Car directamente
 import "./App.css";
 import Caps from "./component/Caps";
 
-
-
 function App() {
   // Estado para el carrito (ahora incluye cantidad de productos)
   const [cart, setCart] = useState([]);
@@ -86,7 +84,7 @@ function App() {
           path="/car"
           element={
             <>
-             <Caps onAddToCart={handleAddToCart} />
+              <Caps onAddToCart={handleAddToCart} />
               <Car
                 onAddToCart={handleAddToCart}
                 pokemonList={cart}
